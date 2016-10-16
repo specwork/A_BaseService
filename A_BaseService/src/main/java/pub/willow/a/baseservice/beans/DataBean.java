@@ -5,11 +5,15 @@ public class DataBean {
 	// and again
 	private int siteId;
 	private int listpageId;
+	private int taskId;
 	private int keywordId;
 	private String keyword;
 	private String title;
 	private String summary;
 	private String url;
+	private String spider;
+	
+	
 	private String spiderTime;
 	public int getSiteId() {
 		return siteId;
@@ -22,6 +26,12 @@ public class DataBean {
 	}
 	public void setListpageId(int listpageId) {
 		this.listpageId = listpageId;
+	}
+	public int getTaskId() {
+		return taskId;
+	}
+	public void setTaskId(int taskId) {
+		this.taskId = taskId;
 	}
 	public int getKeywordId() {
 		return keywordId;
@@ -52,6 +62,12 @@ public class DataBean {
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	public String getSpider() {
+		return spider;
+	}
+	public void setSpider(String spider) {
+		this.spider = spider;
 	}
 	public String getSpiderTime() {
 		return spiderTime;

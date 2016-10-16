@@ -1,7 +1,7 @@
 package pub.willow.a.baseservice.beans;
 
 public class DataBean {
-	
+	// test
 	private int siteId;
 	private int listpageId;
 	private int keywordId;

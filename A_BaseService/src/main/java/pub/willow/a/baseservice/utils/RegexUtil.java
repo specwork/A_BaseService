@@ -54,4 +54,19 @@ public class RegexUtil {
 		return matchInfo;
 	}
 
+	/**
+	 * 获取匹配的正则表达式信息，只匹配一条信息
+	 * @param sourceCode	
+	 * @param regex
+	 * @return
+	 */
+	public static String getMatchInfoSingle(String sourceCode, String regex, int group) {
+		String matchInfo = null;
+		Matcher matcher = getMatcher(regex, sourceCode);
+		if(matcher.find()) {
+			matchInfo = matcher.group(group);
+		}
+		return matchInfo;
+	}
+
 }

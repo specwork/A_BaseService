@@ -11,6 +11,7 @@ public class DataBean {
 	private String title;
 	private String summary;
 	private String url;
+	private String source;
 	private String spider;
 	
 	
@@ -62,6 +63,12 @@ public class DataBean {
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 	public String getSpider() {
 		return spider;

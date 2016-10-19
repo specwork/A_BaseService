@@ -1,6 +1,7 @@
 package pub.willow.a.baseservice.beans;
 
 import java.io.Serializable;
+import java.util.List;
 
 import pub.willow.a.baseservice.utils.StringUtil;
 public class TaskBean implements Serializable {
@@ -19,7 +20,7 @@ public class TaskBean implements Serializable {
 	private int currentPage; // 翻页数量
 	private String charset; // 网站编码格式
 	private String source; // 网页源码
-	private SpiderParamsBean spiderParamsBean; // 爬虫配置信息
+	private List<String> headers;
 	
 	@Override
 	public String toString() {
@@ -99,12 +100,12 @@ public class TaskBean implements Serializable {
 		this.source = source;
 	}
 
-	public SpiderParamsBean getSpiderParamsBean() {
-		return spiderParamsBean;
+	public List<String> getHeaders() {
+		return headers;
 	}
 
-	public void setSpiderParamsBean(SpiderParamsBean spiderParamsBean) {
-		this.spiderParamsBean = spiderParamsBean;
+	public void setHeaders(List<String> headers) {
+		this.headers = headers;
 	}
-	
+
 }
